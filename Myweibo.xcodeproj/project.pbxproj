@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		185E07311BE2359700F3121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07301BE2359700F3121B /* AppDelegate.swift */; };
-		185E07331BE2359700F3121B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07321BE2359700F3121B /* ViewController.swift */; };
-		185E07361BE2359700F3121B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E07341BE2359700F3121B /* Main.storyboard */; };
 		185E07381BE2359700F3121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185E07371BE2359700F3121B /* Assets.xcassets */; };
-		185E073B1BE2359700F3121B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E07391BE2359700F3121B /* LaunchScreen.storyboard */; };
+		185E07651BE235E900F3121B /* GGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07491BE235E900F3121B /* GGTabBarController.swift */; };
+		185E07661BE235E900F3121B /* GGHomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E074E1BE235E900F3121B /* GGHomeTabBarController.swift */; };
+		185E07671BE235E900F3121B /* GGBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07531BE235E900F3121B /* GGBasicVC.swift */; };
+		185E07681BE235E900F3121B /* GGTabBarMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07541BE235E900F3121B /* GGTabBarMain.swift */; };
+		185E07691BE235E900F3121B /* GGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07571BE235E900F3121B /* GGTabBar.swift */; };
+		185E076A1BE235E900F3121B /* GGVistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07581BE235E900F3121B /* GGVistorView.swift */; };
+		185E076B1BE235E900F3121B /* GGMessageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E075B1BE235E900F3121B /* GGMessageTabBarController.swift */; };
+		185E076C1BE235E900F3121B /* GGProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07601BE235E900F3121B /* GGProfileTabBarController.swift */; };
+		185E076D1BE235E900F3121B /* GGNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07641BE235E900F3121B /* GGNetworkTool.swift */; };
+		244C5938DE55CD8462D5AAAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9076685C65300AF434D2942D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101ADBAE0EEE33D1F2D31DA6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		185E072D1BE2359700F3121B /* Myweibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myweibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185E07301BE2359700F3121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		185E07321BE2359700F3121B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		185E07351BE2359700F3121B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185E07371BE2359700F3121B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		185E073A1BE2359700F3121B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185E073C1BE2359700F3121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185E07491BE235E900F3121B /* GGTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGTabBarController.swift; sourceTree = "<group>"; };
+		185E074E1BE235E900F3121B /* GGHomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGHomeTabBarController.swift; sourceTree = "<group>"; };
+		185E07531BE235E900F3121B /* GGBasicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGBasicVC.swift; sourceTree = "<group>"; };
+		185E07541BE235E900F3121B /* GGTabBarMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGTabBarMain.swift; sourceTree = "<group>"; };
+		185E07571BE235E900F3121B /* GGTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGTabBar.swift; sourceTree = "<group>"; };
+		185E07581BE235E900F3121B /* GGVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGVistorView.swift; sourceTree = "<group>"; };
+		185E075B1BE235E900F3121B /* GGMessageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGMessageTabBarController.swift; sourceTree = "<group>"; };
+		185E07601BE235E900F3121B /* GGProfileTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGProfileTabBarController.swift; sourceTree = "<group>"; };
+		185E07641BE235E900F3121B /* GGNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGNetworkTool.swift; sourceTree = "<group>"; };
+		7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9076685C65300AF434D2942D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C5938DE55CD8462D5AAAC /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				185E072F1BE2359700F3121B /* Myweibo */,
 				185E072E1BE2359700F3121B /* Products */,
+				8FE6E90DDAC29DCC948EA130 /* Pods */,
+				FDCCE65D1FAB24F86B66A254 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +74,244 @@
 			isa = PBXGroup;
 			children = (
 				185E07301BE2359700F3121B /* AppDelegate.swift */,
-				185E07321BE2359700F3121B /* ViewController.swift */,
-				185E07341BE2359700F3121B /* Main.storyboard */,
+				185E07421BE235E900F3121B /* Class */,
 				185E07371BE2359700F3121B /* Assets.xcassets */,
-				185E07391BE2359700F3121B /* LaunchScreen.storyboard */,
 				185E073C1BE2359700F3121B /* Info.plist */,
 			);
 			path = Myweibo;
+			sourceTree = "<group>";
+		};
+		185E07421BE235E900F3121B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				185E07431BE235E900F3121B /* Extention */,
+				185E07441BE235E900F3121B /* Library */,
+				185E07451BE235E900F3121B /* Model */,
+				185E07461BE235E900F3121B /* Module */,
+				185E07631BE235E900F3121B /* Tools */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		185E07431BE235E900F3121B /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		185E07441BE235E900F3121B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		185E07451BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E07461BE235E900F3121B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				185E07471BE235E900F3121B /* Discover */,
+				185E074C1BE235E900F3121B /* Home */,
+				185E07511BE235E900F3121B /* Main */,
+				185E07591BE235E900F3121B /* Message */,
+				185E075E1BE235E900F3121B /* Profile */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		185E07471BE235E900F3121B /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				185E07481BE235E900F3121B /* Controller */,
+				185E074A1BE235E900F3121B /* Model */,
+				185E074B1BE235E900F3121B /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		185E07481BE235E900F3121B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185E07491BE235E900F3121B /* GGTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185E074A1BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E074B1BE235E900F3121B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E074C1BE235E900F3121B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				185E074D1BE235E900F3121B /* Controller */,
+				185E074F1BE235E900F3121B /* Model */,
+				185E07501BE235E900F3121B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		185E074D1BE235E900F3121B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185E074E1BE235E900F3121B /* GGHomeTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185E074F1BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E07501BE235E900F3121B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E07511BE235E900F3121B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				185E07521BE235E900F3121B /* Controller */,
+				185E07551BE235E900F3121B /* Model */,
+				185E07561BE235E900F3121B /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		185E07521BE235E900F3121B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185E07531BE235E900F3121B /* GGBasicVC.swift */,
+				185E07541BE235E900F3121B /* GGTabBarMain.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185E07551BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E07561BE235E900F3121B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				185E07571BE235E900F3121B /* GGTabBar.swift */,
+				185E07581BE235E900F3121B /* GGVistorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E07591BE235E900F3121B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				185E075A1BE235E900F3121B /* Controller */,
+				185E075C1BE235E900F3121B /* Model */,
+				185E075D1BE235E900F3121B /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		185E075A1BE235E900F3121B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185E075B1BE235E900F3121B /* GGMessageTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185E075C1BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E075D1BE235E900F3121B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E075E1BE235E900F3121B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				185E075F1BE235E900F3121B /* Controller */,
+				185E07611BE235E900F3121B /* Model */,
+				185E07621BE235E900F3121B /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		185E075F1BE235E900F3121B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185E07601BE235E900F3121B /* GGProfileTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185E07611BE235E900F3121B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185E07621BE235E900F3121B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185E07631BE235E900F3121B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				185E07641BE235E900F3121B /* GGNetworkTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8FE6E90DDAC29DCC948EA130 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */,
+				101ADBAE0EEE33D1F2D31DA6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDCCE65D1FAB24F86B66A254 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9076685C65300AF434D2942D /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185E073F1BE2359700F3121B /* Build configuration list for PBXNativeTarget "Myweibo" */;
 			buildPhases = (
+				8EAB365401183AD4F9072334 /* Check Pods Manifest.lock */,
 				185E07291BE2359700F3121B /* Sources */,
 				185E072A1BE2359700F3121B /* Frameworks */,
 				185E072B1BE2359700F3121B /* Resources */,
+				86CDF25A6CC0E474B4C20FD9 /* Embed Pods Frameworks */,
+				BF60178EF96922D7400A6DF1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,44 +376,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185E073B1BE2359700F3121B /* LaunchScreen.storyboard in Resources */,
 				185E07381BE2359700F3121B /* Assets.xcassets in Resources */,
-				185E07361BE2359700F3121B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86CDF25A6CC0E474B4C20FD9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAB365401183AD4F9072334 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF60178EF96922D7400A6DF1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185E07291BE2359700F3121B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185E07331BE2359700F3121B /* ViewController.swift in Sources */,
+				185E07691BE235E900F3121B /* GGTabBar.swift in Sources */,
+				185E07681BE235E900F3121B /* GGTabBarMain.swift in Sources */,
+				185E076C1BE235E900F3121B /* GGProfileTabBarController.swift in Sources */,
+				185E076D1BE235E900F3121B /* GGNetworkTool.swift in Sources */,
+				185E07671BE235E900F3121B /* GGBasicVC.swift in Sources */,
+				185E07651BE235E900F3121B /* GGTabBarController.swift in Sources */,
+				185E076B1BE235E900F3121B /* GGMessageTabBarController.swift in Sources */,
+				185E076A1BE235E900F3121B /* GGVistorView.swift in Sources */,
+				185E07661BE235E900F3121B /* GGHomeTabBarController.swift in Sources */,
 				185E07311BE2359700F3121B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		185E07341BE2359700F3121B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				185E07351BE2359700F3121B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		185E07391BE2359700F3121B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				185E073A1BE2359700F3121B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		185E073D1BE2359700F3121B /* Debug */ = {
@@ -246,6 +534,7 @@
 		};
 		185E07401BE2359700F3121B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Myweibo/Info.plist;
@@ -257,6 +546,7 @@
 		};
 		185E07411BE2359700F3121B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101ADBAE0EEE33D1F2D31DA6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Myweibo/Info.plist;
@@ -285,6 +575,7 @@
 				185E07411BE2359700F3121B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
