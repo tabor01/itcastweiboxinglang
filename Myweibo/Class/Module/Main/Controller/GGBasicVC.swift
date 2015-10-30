@@ -75,7 +75,8 @@ extension GGBasicVC:GGVistorViewDelegate{
         print(__FUNCTION__)
     }
     func vistorViewRegisteButtonClick() {
-        print(__FUNCTION__)
+        
+        presentViewController(UINavigationController(rootViewController: GGOauthViewController()), animated: true, completion: nil)
     }
 
 

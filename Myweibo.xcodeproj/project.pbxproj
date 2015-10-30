@@ -18,6 +18,8 @@
 		185E076B1BE235E900F3121B /* GGMessageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E075B1BE235E900F3121B /* GGMessageTabBarController.swift */; };
 		185E076C1BE235E900F3121B /* GGProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07601BE235E900F3121B /* GGProfileTabBarController.swift */; };
 		185E076D1BE235E900F3121B /* GGNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07641BE235E900F3121B /* GGNetworkTool.swift */; };
+		185E07711BE2749600F3121B /* GGOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07701BE2749600F3121B /* GGOauthViewController.swift */; };
+		185E07731BE2A6A000F3121B /* GGUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07721BE2A6A000F3121B /* GGUserAccount.swift */; };
 		244C5938DE55CD8462D5AAAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9076685C65300AF434D2942D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		185E075B1BE235E900F3121B /* GGMessageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGMessageTabBarController.swift; sourceTree = "<group>"; };
 		185E07601BE235E900F3121B /* GGProfileTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGProfileTabBarController.swift; sourceTree = "<group>"; };
 		185E07641BE235E900F3121B /* GGNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGNetworkTool.swift; sourceTree = "<group>"; };
+		185E07701BE2749600F3121B /* GGOauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGOauthViewController.swift; sourceTree = "<group>"; };
+		185E07721BE2A6A000F3121B /* GGUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGUserAccount.swift; sourceTree = "<group>"; };
 		7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9076685C65300AF434D2942D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +88,7 @@
 		185E07421BE235E900F3121B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				185E076E1BE2747100F3121B /* auth */,
 				185E07431BE235E900F3121B /* Extention */,
 				185E07441BE235E900F3121B /* Library */,
 				185E07451BE235E900F3121B /* Model */,
@@ -110,6 +115,7 @@
 		185E07451BE235E900F3121B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				185E07721BE2A6A000F3121B /* GGUserAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +303,22 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		185E076E1BE2747100F3121B /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				185E076F1BE2747100F3121B /* autoController */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		185E076F1BE2747100F3121B /* autoController */ = {
+			isa = PBXGroup;
+			children = (
+				185E07701BE2749600F3121B /* GGOauthViewController.swift */,
+			);
+			path = autoController;
+			sourceTree = "<group>";
+		};
 		8FE6E90DDAC29DCC948EA130 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,8 +465,10 @@
 				185E07651BE235E900F3121B /* GGTabBarController.swift in Sources */,
 				185E076B1BE235E900F3121B /* GGMessageTabBarController.swift in Sources */,
 				185E076A1BE235E900F3121B /* GGVistorView.swift in Sources */,
+				185E07731BE2A6A000F3121B /* GGUserAccount.swift in Sources */,
 				185E07661BE235E900F3121B /* GGHomeTabBarController.swift in Sources */,
 				185E07311BE2359700F3121B /* AppDelegate.swift in Sources */,
+				185E07711BE2749600F3121B /* GGOauthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

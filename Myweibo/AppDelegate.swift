@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         window?.makeKeyAndVisible()
-        var ll:Int?
+//        var ll:Int?
 
         return true
     }
