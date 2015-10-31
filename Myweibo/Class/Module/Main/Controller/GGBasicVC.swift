@@ -10,15 +10,15 @@ import UIKit
 
 class GGBasicVC: UITableViewController {
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 //
 //        // Uncomment the following line to preserve selection between presentations
 //        // self.clearsSelectionOnViewWillAppear = false
 //
 //        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 //        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//    }
+    }
 
     let userLogin = false
     override func loadView() {
@@ -37,7 +37,8 @@ class GGBasicVC: UITableViewController {
 //        view.backgroundColor = UIColor(white: 237/255.0, alpha: 1)
 
 //        view.backgroundColor = UIColor.whiteColor()
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didEnterBackground", name: UIApplicationDidEnterBackgroundNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didBecomeActive", name: UIApplicationDidBecomeActiveNotification, object: nil)
         
         if self is GGHomeTableVC
         {
@@ -61,12 +62,17 @@ class GGBasicVC: UITableViewController {
     }
     
     
-//    func setupMessage(message:String,iconName:String)
-//    {
-//        
-//    
-//    
-//    }
+    func didEnterBackground(){
+    (view as! GGVistorView).pauseAnimation()
+        print("didEnterBackground")
+    
+    }
+    func didBecomeActive(){
+        (view as! GGVistorView).resumeAnimation()
+        print("didBecomeActive")
+    }
+    
+    
 
 }
 extension GGBasicVC:GGVistorViewDelegate{

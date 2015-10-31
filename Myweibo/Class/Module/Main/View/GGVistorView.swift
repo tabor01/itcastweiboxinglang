@@ -110,6 +110,35 @@ class GGVistorView: UIView {
         iconView.layer.addAnimation(animation, forKey: "homeAnimation")
     }
     
+    /// 暂停旋转
+    func pauseAnimation() {
+        // 记录暂停时间
+        let pauseTime = iconView.layer.convertTime(CACurrentMediaTime(), fromLayer: nil)
+        
+        // 设置动画速度为0
+        iconView.layer.speed = 0
+        print("hhhhhh")
+        // 设置动画偏移时间
+        iconView.layer.timeOffset = pauseTime
+    }
+    
+    /// 恢复旋转
+    func resumeAnimation() {
+        // 获取暂停时间
+        let pauseTime = iconView.layer.timeOffset
+        
+        // 设置动画速度为1
+        iconView.layer.speed = 1
+        
+        iconView.layer.timeOffset = 0
+        
+        iconView.layer.beginTime = 0
+        
+        let timeSincePause = iconView.layer.convertTime(CACurrentMediaTime(), fromLayer: nil) - pauseTime
+         print(iconView.description)
+        iconView.layer.beginTime = timeSincePause
+    }
+    
     private lazy var iconView:UIImageView = {
         let imgView = UIImageView()
         

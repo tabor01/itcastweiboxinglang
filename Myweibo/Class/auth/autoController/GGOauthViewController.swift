@@ -26,7 +26,7 @@ class GGOauthViewController: UIViewController {
 //        rightButton.setTitle("取消", forState: UIControlState.Normal)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.Plain, target: self, action: "close")
-        let request = NSURLRequest(URL: GGNetworkTool.networkTool.authUrl())
+        let request = NSURLRequest(URL: GGNetworkTool.sharedInstance.authUrl())
         
         webview.loadRequest(request)
         
@@ -46,6 +46,9 @@ class GGOauthViewController: UIViewController {
         
         
     }
+    
+    
+
 
 }
 extension GGOauthViewController: UIWebViewDelegate{
@@ -72,7 +75,7 @@ extension GGOauthViewController: UIWebViewDelegate{
         let urlString = request.URL?.absoluteString
         print(urlString)
         
-        if ((urlString?.hasPrefix(GGNetworkTool.networkTool.redirect_uri)) == false) {
+        if ((urlString?.hasPrefix(GGNetworkTool.sharedInstance.redirect_uri)) == false) {
             return true
         }
         
@@ -98,31 +101,43 @@ extension GGOauthViewController: UIWebViewDelegate{
     
     func loadToken(code:String){
         
-        
-        
-        GGNetworkTool.networkTool.loadToken(code) { (result, error) -> () in
+        GGNetworkTool.sharedInstance.loadToken(code) { (result, error) -> () in
             if error != nil || result == nil
             {
-                SVProgressHUD.showErrorWithStatus("nnnnn", maskType: SVProgressHUDMaskType.Black)
-                
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(2 * NSEC_PER_SEC)),dispatch_get_main_queue(), { () -> Void in
-                    self.close()
-                })
+                self.netError("网络不给力")
                 return
             }
             
             print(result)
             
             let account =  GGUserAccount(dict: result!)
-            
+            // 保存用户数据
             account.saveAccount()
-            
-            
-            print(account)
-            
-            SVProgressHUD.dismiss()
+           
+            //加载网页信息
+            account.loadUserInfo({ (error) -> () in
+                if error != nil
+                { self.netError("加载用户数据出错") }
+                return
+            })
+           
+             print("account:\(GGUserAccount.loadAccount())")
+            //关闭弹出信息
+//            SVProgressHUD.dismiss()
+            self.close()
         }
         
     }
+
+func netError(error:String){
+
+    SVProgressHUD.showErrorWithStatus(error, maskType: SVProgressHUDMaskType.Black)
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(2 * NSEC_PER_SEC)),dispatch_get_main_queue(), { () -> Void in
+        self.close()
+    })
+
+}
+    
 }
