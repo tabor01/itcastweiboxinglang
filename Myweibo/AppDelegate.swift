@@ -18,14 +18,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let mainVc = GGTabBarMain()
-        window?.rootViewController = mainVc
+        let person = Person()
+        person.eat()
         
+//        let mainVc = GGTabBarMain()
+//        window?.rootViewController = mainVc
+        //mark - 调试新特性
+        window?.rootViewController = defaultController()
+        self.isNewVersion()
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         window?.makeKeyAndVisible()
 //        var ll:Int?
 
         return true
+    }
+    
+    private func defaultController() -> UIViewController {
+//    
+        if GGUserAccount.userLogin() == false
+        {
+            return GGTabBarMain()
+        
+        }
+//
+        return isNewVersion() ? GGCollectionVC() : GGWelcomVC()
+    
+    }
+    
+    func switchRootVC(isMain:Bool){
+        window?.rootViewController = isMain ? GGTabBarMain() : GGWelcomVC()
+    }
+    
+    
+    func isNewVersion()->Bool{
+    
+        let string = "CFBundleShortVersionString"
+        let currentVer = NSBundle.mainBundle().infoDictionary![string]!.doubleValue
+        print(currentVer)
+        
+        let sandboxversion = "sandbo--xversion"
+        let oldVer = NSUserDefaults.standardUserDefaults().doubleForKey(sandboxversion)
+        print(oldVer)
+        
+        //保存新特性
+        NSUserDefaults.standardUserDefaults().setDouble(currentVer, forKey: sandboxversion)
+        let res = NSUserDefaults.standardUserDefaults().synchronize()
+        let str = res ? "已经存储" : "没有存储"
+        print(str)
+        return currentVer > oldVer
     }
 
     func applicationWillResignActive(application: UIApplication) {

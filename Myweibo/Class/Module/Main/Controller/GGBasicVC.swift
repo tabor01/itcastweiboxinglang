@@ -20,7 +20,7 @@ class GGBasicVC: UITableViewController {
 //        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    let userLogin = false
+    let userLogin = GGUserAccount.userLogin()
     override func loadView() {
         userLogin ? super.loadView() : setupVisableView()
 //        super.loadView()

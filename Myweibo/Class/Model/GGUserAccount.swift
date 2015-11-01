@@ -12,7 +12,10 @@ import UIKit
 
 class GGUserAccount: NSObject,NSCoding{
 
+    class func userLogin()-> Bool {
+    return GGUserAccount.loadAccount() != nil
     
+    }
     
     var access_token : String?
     

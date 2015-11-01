@@ -20,6 +20,13 @@
 		185E076D1BE235E900F3121B /* GGNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07641BE235E900F3121B /* GGNetworkTool.swift */; };
 		185E07711BE2749600F3121B /* GGOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07701BE2749600F3121B /* GGOauthViewController.swift */; };
 		185E07731BE2A6A000F3121B /* GGUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E07721BE2A6A000F3121B /* GGUserAccount.swift */; };
+		187B29DC1BE60C95000E5B4B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B29DB1BE60C95000E5B4B /* UIColor+Extension.swift */; };
+		187B29E01BE614EA000E5B4B /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B29DF1BE614EA000E5B4B /* UIBarButtonItem+Extension.swift */; };
+		187B29E21BE6273E000E5B4B /* GGHomeTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B29E11BE6273E000E5B4B /* GGHomeTitleButton.swift */; };
+		187B29E61BE641D8000E5B4B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B29E51BE641D8000E5B4B /* Person.m */; };
+		18F162171BE4DA0E00802686 /* GGWelcomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F162161BE4DA0E00802686 /* GGWelcomVC.swift */; };
+		18F162191BE4E31F00802686 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F162181BE4E31F00802686 /* UIView+AutoLayout.swift */; };
+		18F1621B1BE4FCBE00802686 /* GGCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1621A1BE4FCBE00802686 /* GGCollectionVC.swift */; };
 		244C5938DE55CD8462D5AAAC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9076685C65300AF434D2942D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +47,15 @@
 		185E07641BE235E900F3121B /* GGNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGNetworkTool.swift; sourceTree = "<group>"; };
 		185E07701BE2749600F3121B /* GGOauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGOauthViewController.swift; sourceTree = "<group>"; };
 		185E07721BE2A6A000F3121B /* GGUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGUserAccount.swift; sourceTree = "<group>"; };
+		187B29DB1BE60C95000E5B4B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		187B29DF1BE614EA000E5B4B /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		187B29E11BE6273E000E5B4B /* GGHomeTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGHomeTitleButton.swift; sourceTree = "<group>"; };
+		187B29E31BE641D7000E5B4B /* Myweibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Myweibo-Bridging-Header.h"; sourceTree = "<group>"; };
+		187B29E41BE641D8000E5B4B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		187B29E51BE641D8000E5B4B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		18F162161BE4DA0E00802686 /* GGWelcomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWelcomVC.swift; sourceTree = "<group>"; };
+		18F162181BE4E31F00802686 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		18F1621A1BE4FCBE00802686 /* GGCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGCollectionVC.swift; sourceTree = "<group>"; };
 		7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9076685C65300AF434D2942D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +97,9 @@
 				185E07421BE235E900F3121B /* Class */,
 				185E07371BE2359700F3121B /* Assets.xcassets */,
 				185E073C1BE2359700F3121B /* Info.plist */,
+				187B29E41BE641D8000E5B4B /* Person.h */,
+				187B29E51BE641D8000E5B4B /* Person.m */,
+				187B29E31BE641D7000E5B4B /* Myweibo-Bridging-Header.h */,
 			);
 			path = Myweibo;
 			sourceTree = "<group>";
@@ -88,57 +107,66 @@
 		185E07421BE235E900F3121B /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				185E076E1BE2747100F3121B /* auth */,
-				185E07431BE235E900F3121B /* Extention */,
-				185E07441BE235E900F3121B /* Library */,
-				185E07451BE235E900F3121B /* Model */,
-				185E07461BE235E900F3121B /* Module */,
+				185E076E1BE2747100F3121B /* auth(授权) */,
+				185E07431BE235E900F3121B /* Extention(扩展) */,
+				185E07441BE235E900F3121B /* Library(第三方库) */,
+				185E07451BE235E900F3121B /* Model(全局模块) */,
+				185E07461BE235E900F3121B /* Module(业务模块) */,
 				185E07631BE235E900F3121B /* Tools */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		185E07431BE235E900F3121B /* Extention */ = {
+		185E07431BE235E900F3121B /* Extention(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				187B29DB1BE60C95000E5B4B /* UIColor+Extension.swift */,
+				187B29DF1BE614EA000E5B4B /* UIBarButtonItem+Extension.swift */,
 			);
+			name = "Extention(扩展)";
 			path = Extention;
 			sourceTree = "<group>";
 		};
-		185E07441BE235E900F3121B /* Library */ = {
+		185E07441BE235E900F3121B /* Library(第三方库) */ = {
 			isa = PBXGroup;
 			children = (
+				18F162181BE4E31F00802686 /* UIView+AutoLayout.swift */,
 			);
+			name = "Library(第三方库)";
 			path = Library;
 			sourceTree = "<group>";
 		};
-		185E07451BE235E900F3121B /* Model */ = {
+		185E07451BE235E900F3121B /* Model(全局模块) */ = {
 			isa = PBXGroup;
 			children = (
 				185E07721BE2A6A000F3121B /* GGUserAccount.swift */,
 			);
+			name = "Model(全局模块)";
 			path = Model;
 			sourceTree = "<group>";
 		};
-		185E07461BE235E900F3121B /* Module */ = {
+		185E07461BE235E900F3121B /* Module(业务模块) */ = {
 			isa = PBXGroup;
 			children = (
-				185E07471BE235E900F3121B /* Discover */,
-				185E074C1BE235E900F3121B /* Home */,
-				185E07511BE235E900F3121B /* Main */,
-				185E07591BE235E900F3121B /* Message */,
-				185E075E1BE235E900F3121B /* Profile */,
+				18F162141BE4D9C300802686 /* NewFeature(新特性) */,
+				185E07471BE235E900F3121B /* Discover(发现) */,
+				185E074C1BE235E900F3121B /* Home(首页) */,
+				185E07511BE235E900F3121B /* Main(主要的) */,
+				185E07591BE235E900F3121B /* Message(消息) */,
+				185E075E1BE235E900F3121B /* Profile(我) */,
 			);
+			name = "Module(业务模块)";
 			path = Module;
 			sourceTree = "<group>";
 		};
-		185E07471BE235E900F3121B /* Discover */ = {
+		185E07471BE235E900F3121B /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
 				185E07481BE235E900F3121B /* Controller */,
 				185E074A1BE235E900F3121B /* Model */,
 				185E074B1BE235E900F3121B /* View */,
 			);
+			name = "Discover(发现)";
 			path = Discover;
 			sourceTree = "<group>";
 		};
@@ -164,13 +192,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		185E074C1BE235E900F3121B /* Home */ = {
+		185E074C1BE235E900F3121B /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				185E074D1BE235E900F3121B /* Controller */,
 				185E074F1BE235E900F3121B /* Model */,
 				185E07501BE235E900F3121B /* View */,
 			);
+			name = "Home(首页)";
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -192,17 +221,19 @@
 		185E07501BE235E900F3121B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				187B29E11BE6273E000E5B4B /* GGHomeTitleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		185E07511BE235E900F3121B /* Main */ = {
+		185E07511BE235E900F3121B /* Main(主要的) */ = {
 			isa = PBXGroup;
 			children = (
 				185E07521BE235E900F3121B /* Controller */,
 				185E07551BE235E900F3121B /* Model */,
 				185E07561BE235E900F3121B /* View */,
 			);
+			name = "Main(主要的)";
 			path = Main;
 			sourceTree = "<group>";
 		};
@@ -231,13 +262,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		185E07591BE235E900F3121B /* Message */ = {
+		185E07591BE235E900F3121B /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
 				185E075A1BE235E900F3121B /* Controller */,
 				185E075C1BE235E900F3121B /* Model */,
 				185E075D1BE235E900F3121B /* View */,
 			);
+			name = "Message(消息)";
 			path = Message;
 			sourceTree = "<group>";
 		};
@@ -263,13 +295,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		185E075E1BE235E900F3121B /* Profile */ = {
+		185E075E1BE235E900F3121B /* Profile(我) */ = {
 			isa = PBXGroup;
 			children = (
 				185E075F1BE235E900F3121B /* Controller */,
 				185E07611BE235E900F3121B /* Model */,
 				185E07621BE235E900F3121B /* View */,
 			);
+			name = "Profile(我)";
 			path = Profile;
 			sourceTree = "<group>";
 		};
@@ -303,11 +336,12 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		185E076E1BE2747100F3121B /* auth */ = {
+		185E076E1BE2747100F3121B /* auth(授权) */ = {
 			isa = PBXGroup;
 			children = (
 				185E076F1BE2747100F3121B /* autoController */,
 			);
+			name = "auth(授权)";
 			path = auth;
 			sourceTree = "<group>";
 		};
@@ -317,6 +351,24 @@
 				185E07701BE2749600F3121B /* GGOauthViewController.swift */,
 			);
 			path = autoController;
+			sourceTree = "<group>";
+		};
+		18F162141BE4D9C300802686 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				18F162151BE4D9C300802686 /* controller */,
+			);
+			name = "NewFeature(新特性)";
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		18F162151BE4D9C300802686 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F162161BE4DA0E00802686 /* GGWelcomVC.swift */,
+				18F1621A1BE4FCBE00802686 /* GGCollectionVC.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		8FE6E90DDAC29DCC948EA130 /* Pods */ = {
@@ -459,16 +511,23 @@
 			files = (
 				185E07691BE235E900F3121B /* GGTabBar.swift in Sources */,
 				185E07681BE235E900F3121B /* GGTabBarMain.swift in Sources */,
+				187B29E61BE641D8000E5B4B /* Person.m in Sources */,
 				185E076C1BE235E900F3121B /* GGProfileTabBarController.swift in Sources */,
+				18F162191BE4E31F00802686 /* UIView+AutoLayout.swift in Sources */,
 				185E076D1BE235E900F3121B /* GGNetworkTool.swift in Sources */,
 				185E07671BE235E900F3121B /* GGBasicVC.swift in Sources */,
 				185E07651BE235E900F3121B /* GGTabBarController.swift in Sources */,
+				187B29DC1BE60C95000E5B4B /* UIColor+Extension.swift in Sources */,
 				185E076B1BE235E900F3121B /* GGMessageTabBarController.swift in Sources */,
 				185E076A1BE235E900F3121B /* GGVistorView.swift in Sources */,
+				18F1621B1BE4FCBE00802686 /* GGCollectionVC.swift in Sources */,
+				187B29E21BE6273E000E5B4B /* GGHomeTitleButton.swift in Sources */,
 				185E07731BE2A6A000F3121B /* GGUserAccount.swift in Sources */,
+				18F162171BE4DA0E00802686 /* GGWelcomVC.swift in Sources */,
 				185E07661BE235E900F3121B /* GGHomeTabBarController.swift in Sources */,
 				185E07311BE2359700F3121B /* AppDelegate.swift in Sources */,
 				185E07711BE2749600F3121B /* GGOauthViewController.swift in Sources */,
+				187B29E01BE614EA000E5B4B /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,10 +620,13 @@
 			baseConfigurationReference = 7B219E0733A90DE353A88C4E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Myweibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tabor.Myweibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Myweibo/Myweibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -573,10 +635,12 @@
 			baseConfigurationReference = 101ADBAE0EEE33D1F2D31DA6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Myweibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tabor.Myweibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Myweibo/Myweibo-Bridging-Header.h";
 			};
 			name = Release;
 		};

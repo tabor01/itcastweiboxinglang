@@ -26,11 +26,27 @@ class GGOauthViewController: UIViewController {
 //        rightButton.setTitle("取消", forState: UIControlState.Normal)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.Plain, target: self, action: "close")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "填充", style: UIBarButtonItemStyle.Plain, target: self, action: "autoFill")
         let request = NSURLRequest(URL: GGNetworkTool.sharedInstance.authUrl())
         
         webview.loadRequest(request)
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc private func autoFill(){
+    
+    let js = "document.getElementById('userId').value='xngpq@198.com';" + "document.getElementById('passwd').value='0000023456';"
+//        let result = webview.stringByEvaluatingJavaScriptFromString(js)
+//        print(result)
+    
+       webview.stringByEvaluatingJavaScriptFromString(js)
+        
+//    let js = "document.getElementById('userId').value='czbkiosweibo@163.com';" + "document.getElementById('passwd').value='czbkiosczbkios';"
+        
+        // webView执行js代码
+//        webview.stringByEvaluatingJavaScriptFromString(js)
+        
     }
     
     lazy var webview:UIWebView = {
@@ -117,7 +133,11 @@ extension GGOauthViewController: UIWebViewDelegate{
             //加载网页信息
             account.loadUserInfo({ (error) -> () in
                 if error != nil
-                { self.netError("加载用户数据出错") }
+                {
+                    self.netError("加载用户数据出错")
+//                    self.netError(<#T##error: String##String#>)
+                
+                }
                 return
             })
            
@@ -125,6 +145,8 @@ extension GGOauthViewController: UIWebViewDelegate{
             //关闭弹出信息
 //            SVProgressHUD.dismiss()
             self.close()
+            //加载成功， 进入欢迎界面
+             (UIApplication.sharedApplication().delegate as! AppDelegate).switchRootVC(false)
         }
         
     }

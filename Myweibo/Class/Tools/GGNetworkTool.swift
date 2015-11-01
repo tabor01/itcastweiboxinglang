@@ -10,6 +10,30 @@ import UIKit
 
 import AFNetworking
 
+enum GGNetworkError: Int {
+
+    case emptyToken = -1
+    case emptyUid = -2
+
+    var description: String{
+        get {
+            switch self {
+            case GGNetworkError.emptyToken:
+                return "accesstoken 为空"
+            case GGNetworkError.emptyUid:
+                return "uid 为空"
+                
+            }
+        }
+    }
+    
+    func error()->NSError {
+    
+    return NSError(domain: "gg.error.network", code: rawValue, userInfo: ["errorDescription":description])
+    }
+
+}
+
 class GGNetworkTool: NSObject {
     
     //让工具类独立出来
@@ -72,8 +96,10 @@ class GGNetworkTool: NSObject {
     func loadUserInfo(finish:(result:[String:AnyObject]?,error:NSError?)->()){
         
         
-        if GGUserAccount.loadAccount()?.access_token == nil
+        if GGUserAccount.loadAccount()?.access_token != nil
         {
+            let error = GGNetworkError.emptyToken.error()
+            finish(result: nil, error: error)
             print("没有用户信息")
             return
         }
@@ -81,6 +107,8 @@ class GGNetworkTool: NSObject {
         if GGUserAccount.loadAccount()?.uid == nil
         {
             print("没有uid")
+            let error = GGNetworkError.emptyUid.error()
+            finish(result: nil, error: error)
             return
         }
     

@@ -117,7 +117,7 @@ class GGVistorView: UIView {
         
         // 设置动画速度为0
         iconView.layer.speed = 0
-        print("hhhhhh")
+        print("hhhhhh")  
         // 设置动画偏移时间
         iconView.layer.timeOffset = pauseTime
     }
